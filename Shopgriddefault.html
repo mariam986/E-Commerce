@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop Grid</title>
+        <link rel="stylesheet" href="Ecom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mediaqueries.css">
+
+  </head>
+  <body>
+    <div class="heading-bar">
+          <div class="hh">
+          <div class="class-1">
+              <div class="sub-1">
+                <img src="Vector.png" id="icon">
+                <p href="">usmanomolara05@gmail.com</p>
+              </div>
+              <div  class="sub-2">
+                    <img src="Vector (2).png" id="icon">
+                    <p href="">07069560776</p>
+              </div>
+          </div>
+            <div class="class-2">
+                <div  class="sub-3">
+                    <p><a href="logged-out-home.html" class="aa">log-out</a></p>
+                    <img src="carbon_user.png" id="logo">
+                </div>
+                <div  class="sub-4">
+                    <p class="">wishlist</p>
+                    <img src="Vector (3).png" id="logo">
+                </div>
+                <a href="shoppingcart.html">
+                  <img src="fluent_cart-24-regular.png" >
+                </a>  
+            </div>
+              </div>
+
+    </div>
+    <div id="desktop-nav">
+            <div class="dd">
+                <div class="business-name"> Hekto</div>
+                <div class="bar">
+                    <ul class="nav-links">
+                      <li><a href="logged-in-home.html">Home</a></li>
+                      <li><a href="#Pages">Pages</a></li>
+                      <li><a href="Shoplist.html">Products</a></li>
+                      <li><a href="Blog page.html">Blog</a></li>
+                      <li><a href="Shopgriddefault.html">Shop</a></li>
+                      <li><a href="Contact Us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" class="search-input" >
+                    <button class="search-btn"> <img src="uil_search.png" class="search-btn img"></button>
+                </div>
+            </div>
+    </div>
+    <nav id="hamburger-nav">
+          <div class="business-name">Hekto</div>
+          <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+    </nav>
+      
+      <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            <ul class="menu-links">
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="logged-in-home.html">Home</a></li>
+                <li><a href="#Pages">Pages</a></li>
+                <li><a href="Shoplist.html">Products</a></li>
+                <li><a href="Blog page.html">Blog</a></li>
+                <li><a href="Shopgriddefault.html">Shop</a></li>
+                <li><a href="Contact Us.html">Contact</a></li>
+                <li><a href="About Us.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <div class="log-in">
+                <div class="line-1">
+                    <p>Shop Grid Default</p>
+                </div>
+                <div class="line-2">
+                    <p>Home,</p>
+                    <p>Pages,</p>
+                    <p>Shop Grid Default</p>
+                </div>
+           </div>
+        </div>
+        <div class="shopgrid">
+            <div class="shopgriddefault">
+                <div class="shopgriddefaulttitle">
+                    <h1 class="title">Ecommerce Accesories & Fashion Item</h1>
+                    <p class="tite">About 9,620 Results (0.62 seconds)</p>
+
+                </div>
+                <div class="shopgriddefaultinput">
+                    <p>Per Page: <input type="text" class="shopgridinput"></p>
+                    <p>Sort by: <input type="text" class="shopgridinput1"></p>
+                    <p>View: <img src="clarity_grid-view-solid (1).png"> <img src="fa-solid_list.png">   <input type="text" class="shopgridinput2"></p>
+                </div>
+            </div>
+        </div>
+        <div class="product-container" id="product-list">
+            <div class="product">
+                <img src="${product.image}" alt="${product.name}">
+                <h3 class="product-name">${product.name}</h3>
+                <p>
+                  <span class="product-price">${product.price}</span>
+                  <span class="product-discount">${product.discountPrice}</span>
+                </p>
+                <div class="color-dots">
+                  ${colorDots} 
+                </div>
+              </div>
+        </div>
+        <div class="lot">
+            <img src="image 1174.png" class="yot">
+        </div>
+        <div class="foot">
+            <div class="footing">
+                <div class="">
+                    <div class="name"> Hekto</div>
+                    <div class="in-put">
+                        <input type="text" placeholder="Enter Email Address" class="holder">
+                        <button class="up-btn">sign up</button>
+                    </div>
+                    <div class="address">
+                        <p>contact info</p>
+                        <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="devices">
+                        <div class="test">
+                            <p class="test"> Categories</p>
+                        </div>
+                        <div class="device">
+                            <p>Laptops & Computers</p>
+                            <p>Cameras & Photography</p>
+                            <p>Smart Phones & Tablets</p>
+                            <p>Video Games & Consoles</p>
+                            <p>Waterproof Headphones</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="devices">
+                    <p class="test"> Customer Care</p>
+                    <div class="device">
+                        <p>My Accounts</p>
+                        <p>Discounts</p>
+                        <p>Return</p>
+                        <p>Orders History</p>
+                        <p>Order packing</p>
+                    </div>
+                </div>
+                <div class="devices">
+                    <p class="test">Pages</p>
+                    <div class="device">
+                        <p>Shop</p>
+                        <p>Browse the shop</p>
+                        <p>Category</p>
+                        <p>Pre built pages</p>
+                        <p>Visual composer element</p>
+                        <p>Woocommerce pages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bottom">
+            <div class="down-top">
+                <div class="tesst">
+                    <p>©Webecy - All Rights Reserved</p>
+                </div>
+                <div>
+                    <img src="Group 205.png">
+                </div>
+            </div>
+        </footer>
+       
+
+        <script>
+            // Array of product objects
+const products = [
+  {
+    name: "Vel elit euismod",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "image 9.png", // Replace with actual image path
+  },
+  {
+    name: "Ultrices condimentum imperdiet",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "image 1165.png",
+  },
+  {
+    name: "Vitae suspendisse sed",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "image 1173.png",
+  },
+  {
+    name: "Sed at fermentum",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "10011 1.png",
+  },
+  {
+    name: "Fusce pellentesque at",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "unnamed 1.png",
+  },
+  {
+    name: "Vestibulum magna laoreet",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "1562173100-movado-connect-1562173094 2.png",
+  },
+  {
+    name: "Sollicitudin amet orci",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "purepng 1.png",
+  },
+  {
+    name: "Ultrices mauris sit",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "image 1164.png ",
+  },
+  {
+    name: "Pellentesque condimentum ac",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "res_7e24bf6d78bbb2518489d0af847413c9_450x450_fcp0 2.png",
+  },
+  {
+    name: "Cras scelerisque velit",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "cam 2.png",
+  },
+  {
+    name: "Lectus vulputate faucibus",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "KOOF.png",
+  },
+  {
+    name: "Purus risus, ut",
+    price: "$26.00",
+    discountPrice: "$42.00",
+    availableColors: ["pink", "blue", "green", "purple"],
+    image: "10011 1 (1).png",
+  }
+];
+
+// Get the container element where products will be displayed
+const productList = document.getElementById('product-list');
+
+// Generate HTML for each product using map()
+const productHTML = products.map((product) => {
+  // Create color dots dynamically
+  const colorDots = product.availableColors.map(color => 
+    `<div style="background-color: ${color}; width: 10px; height: 10px; border-radius: 50%;"></div>`
+  ).join(''); // Join the color dots into a single string
+
+  // Return the full product card HTML
+  return `
+    <div class="product">
+        <div class="product-img-container">
+      <img src="${product.image}" alt="${product.name}" class="product-img">
+      </div>
+      <div class="product-content">
+      <h3 class="product-name">${product.name}</h3>
+      <p>
+        <span class="product-price">${product.price}</span>
+        <span class="product-discount">${product.discountPrice}</span>
+      </p>
+      <div class="color-dots">
+        ${colorDots} 
+      </div>
+      </div>
+    </div>
+  `;
+}).join(''); // Join the product cards into a single HTML string
+
+// Insert the generated HTML into the product list container
+productList.innerHTML = productHTML;
+
+        </script>
+<script src="Ecom.js"></script>  
+    </body>
+</html>

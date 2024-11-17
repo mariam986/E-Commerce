@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop List</title>
+        <link rel="stylesheet" href="Ecom.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="mediaqueries.css">
+
+    </head>
+    <body>
+        <div class="heading-bar">
+            <div class="hh">
+                <div class="class-1">
+                    <div class="sub-1">
+                            <img src="Vector.png" id="icon">
+                            <p href="">usmanomolara05@gmail.com</p>
+                    </div>
+                    <div  class="sub-2">
+                        <img src="Vector (2).png" id="icon">
+                        <p href="">07069560776</p>
+                    </div>
+               </div>
+               <div class="class-2">
+                    <div  class="sub-3">
+                        <p><a href="logged-out-home.html" class="aa">log-out</a></p>
+                        <img src="carbon_user.png" id="logo">
+                    </div>
+                    <div  class="sub-4">
+                        <p class="">wishlist</p>
+                        <img src="Vector (3).png" id="logo">
+                    </div>
+                    <a href="shoppingcart.html">
+                        <img src="fluent_cart-24-regular.png" >
+                    </a>  
+               </div>
+           </div>
+
+        </div>
+        <div id="desktop-nav">
+            <div class="dd">
+                <div class="business-name"> Hekto</div>
+                <div class="bar">
+                    <ul class="nav-links">
+                        <li><a href="logged-in-home.html">Home</a></li>
+                        <li><a href="#Pages">Pages</a></li>
+                        <li><a href="Shoplist.html">Products</a></li>
+                        <li><a href="Blog page.html">Blog</a></li>
+                        <li><a href="Shopgriddefault.html">Shop</a></li>
+                        <li><a href="Contact Us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input type="text" class="search-input" >
+                    <button class="search-btn"> <img src="uil_search.png" class="search-btn img"></button>
+                </div>
+            </div>
+        </div>
+        <div class="login">
+            <div class="log-in">
+                <div class="line-1">
+                    <p>Shop Grid Default</p>
+                </div>
+                <div class="line-2">
+                    <p>Home,</p>
+                    <p>Pages,</p>
+                    <p>Shop Grid Default</p>
+                </div>
+           </div>
+        </div>
+        <div class="shopgrid">
+            <div class="shopgriddefault">
+                <div class="shopgriddefaulttitle">
+                    <h1 class="title">Ecommerce Accesories & Fashion Item</h1>
+                    <p class="tite">About 9,620 Results (0.62 seconds)</p>
+
+                </div>
+                <div class="shopgriddefaultinput">
+                    <p>Per Page: <input type="text" class="shopgridinput"></p>
+                    <p>Sort by: <input type="text" class="shopgridinput1"></p>
+                    <p>View: <img src="clarity_grid-view-solid (1).png"> <img src="fa-solid_list.png">   <input type="text" class="shopgridinput2"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-containerr" id="product-list"></div>
+        <div class="lot">
+            <img src="image 1174.png">
+        </div>
+        <div class="foot">
+            <div class="footing">
+                <div class="">
+                    <div class="name"> Hekto</div>
+                    <div class="in-put">
+                        <input type="text" placeholder="Enter Email Address" class="holder">
+                        <button class="up-btn">sign up</button>
+                    </div>
+                    <div class="address">
+                        <p>contact info</p>
+                        <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="devices">
+                        <div class="test">
+                            <p class="test"> Categories</p>
+                        </div>
+                        <div class="device">
+                            <p>Laptops & Computers</p>
+                            <p>Cameras & Photography</p>
+                            <p>Smart Phones & Tablets</p>
+                            <p>Video Games & Consoles</p>
+                            <p>Waterproof Headphones</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="devices">
+                    <p class="test"> Customer Care</p>
+                    <div class="device">
+                        <p>My Accounts</p>
+                        <p>Discounts</p>
+                        <p>Return</p>
+                        <p>Orders History</p>
+                        <p>Order packing</p>
+                    </div>
+                </div>
+                <div class="devices">
+                    <p class="test">Pages</p>
+                    <div class="device">
+                        <p>Shop</p>
+                        <p>Browse the shop</p>
+                        <p>Category</p>
+                        <p>Pre built pages</p>
+                        <p>Visual composer element</p>
+                        <p>Woocommerce pages</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bottom">
+            <div class="down-top">
+                <div class="tesst">
+                    <p>©Webecy - All Rights Reserved</p>
+                </div>
+                <div>
+                    <img src="Group 205.png">
+                </div>
+            </div>
+        </footer>
+       
+
+
+        <script>
+            // Array of product objects
+const products = [
+  {
+    name: "Accumsan tincidunt",
+    price: "$26.00",
+    discountPrice: "$39.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 4,  // Assuming a rating scale out of 5
+    image: "Rectangle 32.png"
+  },
+  {
+    name: "In nulla",
+    price: "$26.00",
+    discountPrice: "$39.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 4,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (1).png"
+  },
+  {
+    name: "Vel sem",
+    price: "$16.00",
+    discountPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 5,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (2).png"
+  },
+  {
+    name: "Porttitor cum",
+    price: "$16.00",
+    discountPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 5,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (3).png"
+  },
+  {
+    name: "Nunc in",
+    price: "$16.00",
+    discountPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 5,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (4).png"
+  },
+  {
+    name: "Vitae facilisis",
+    price: "$16.00",
+    discountPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 5,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (5).png"
+  },
+  {
+    name: "Curabitur lectus",
+    price: "$16.00",
+    discountPrice: "$40.00",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.",
+    availableColors: ["yellow", "gray", "red"],
+    rating: 5,  // Assuming a rating scale out of 5
+    image: "Rectangle 32 (6).png"
+  }
+];
+
+// Get the container element where products will be displayed
+const productList = document.getElementById('product-list');
+
+// Generate HTML for each product using map()
+const productHTML = products.map((product) => {
+  // Create color dots dynamically
+  const colorDots = product.availableColors.map(color => 
+    `<div style="background-color: ${color}; width: 10px; height: 10px; border-radius: 50%;"></div>`
+  ).join(''); // Join the color dots into a single string
+
+  // Create rating stars dynamically
+  const ratingStars = Array(product.rating).fill('★').join('');
+
+  // Return the full product card HTML
+  return `
+    <div class="good">
+      <img src="${product.image}" alt="${product.name}" class="good-img">
+      <div class="good-container">
+         <div class="productname-color">
+            <h3>${product.name}</h3>
+            <div class="colorr-dots">
+                ${colorDots} 
+            </div>
+         </div>
+         <div class="productprice-rating">
+            <p>
+                <span class="product-price">${product.price}</span>
+                <span class="product-discount">${product.discountPrice}</span>
+                
+            </p>
+            <div class="rating">${ratingStars}</div>
+         </div>
+            <p class="project-description">${product.description}</p>
+        
+        
+         <div>
+            <img src="fluent_cart-24-regular (1).png">
+            <img src="Vector (4).png">
+            <img src="uil_search-plus.png">
+         </div>
+       </div>
+    </div>
+  `;
+}).join(''); // Join the product cards into a single HTML string
+
+// Insert the generated HTML into the product list container
+productList.innerHTML = productHTML;
+
+
+        </script>
+        <script src="Ecom.js"></script>  
+        </body>
+</html>
