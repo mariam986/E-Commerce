@@ -58,6 +58,32 @@
                 </div>
             </div>
         </div>
+        <nav id="hamburger-nav">
+            <div class="business-name">Hekto</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+      </nav>
+        
+        <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+          <div id="sidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+              <ul class="menu-links">
+                  <li><a href="index.html">Log out</a></li>
+                  <li><a href="logged-in-home.html">Home</a></li>
+                  <li><a href="#Pages">Pages</a></li>
+                  <li><a href="Shoplist.html">Products</a></li>
+                  <li><a href="Blog page.html">Blog</a></li>
+                  <li><a href="Shopgriddefault.html">Shop</a></li>
+                  <li><a href="shoppingcart.html">Cart</a></li>
+                  <li><a href="Contact Us.html">Contact</a></li>
+                  <li><a href="About Us.html">About us</a></li>
+              </ul>
+          </div>
         <div class="login">
             <div class="log-in">
                 <div class="line-1">
@@ -87,7 +113,7 @@
         
         <div class="product-containerr" id="product-list"></div>
         <div class="lot">
-            <img src="image 1174.png">
+            <img src="image 1174.png" class="yot">
         </div>
         <div class="foot">
             <div class="footing">
@@ -241,7 +267,7 @@ const productHTML = products.map((product) => {
       <img src="${product.image}" alt="${product.name}" class="good-img">
       <div class="good-container">
          <div class="productname-color">
-            <h3>${product.name}</h3>
+            <h3 class="p-name">${product.name}</h3>
             <div class="colorr-dots">
                 ${colorDots} 
             </div>
